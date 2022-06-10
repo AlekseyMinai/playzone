@@ -1,1 +1,1 @@
-web: ./build/install/ru.playzone.palyzone-backend/bin/ru.playzone.palyzone-backend
+web: ./build/install/ru.playzone.ktor-sample/bin/ru.playzone.ktor-sample
