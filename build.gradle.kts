@@ -40,3 +40,7 @@ dependencies {
 
     implementation("org.postgresql:postgresql:42.2.2")
 }
+
+tasks.create("stage") {
+    dependsOn("installDist")
+}

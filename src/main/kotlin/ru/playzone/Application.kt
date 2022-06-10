@@ -13,7 +13,7 @@ fun main() {
     Database.connect("jdbc:postgresql://localhost:5432/playzone", driver = "org.postgresql.Driver",
         user = "postgres", password = "12345Q"
     )
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
+    embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
         configureRouting()
         configureSerialization()
         configureLoginRouting()
